@@ -378,10 +378,40 @@ header {
     }
     & .products-wrapper {
         margin-top: 40px;
+        & .card {
+            position: relative;
+            overflow: hidden;
+
+            /* Add-to-cart button inside the card */
+            & .add-to-cart-btn {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                padding: 12px;
+                background-color: black;
+                color: white;
+                border: none;
+                font-size: 14px;
+                text-transform: uppercase;
+                cursor: pointer;
+                opacity: 0;
+                transform: translateY(100%);
+                transition: opacity 0.3s ease, transform 0.3s ease;
+            }
+
+            /* Show button on hover */
+            &:hover .add-to-cart-btn {
+                opacity: 1;
+                transform: translateY(0);
+            
+            }
+        }
+    }
         
     }
     
-}
+
 
 
 .browse-category {
