@@ -140,6 +140,9 @@ a {
 .pointer {
     cursor: pointer;
 }
+.mt-20{
+    margin-top:20px ;
+}
 .mt-140{
     margin-top: 140px;
 
@@ -149,6 +152,9 @@ a {
 }
 .mb-20{
     margin-bottom:20px ;
+}
+.mb-60{
+    margin-bottom:60px;
 }
 .mt-70{
     margin-top:70px;
@@ -172,7 +178,11 @@ a {
       transform: translateY(-3px);
 }
 }
-
+.current-price{
+    font-family: "Poppins", sans-serif;
+    font-weight:500;
+    color: var(--secondary-2);
+}
 .tag {
     color: var(--secondary-2);
 
@@ -272,8 +282,8 @@ a {
                 }
                 & .prices {
                     margin-block: 8px;
-                    & .current-price {
-                        color: var(--secondary-2);
+                   /*  & .current-price {
+                        color: var(--secondary-2); */
                     }
                     & .old-price {
                         color: var(--black);
@@ -284,10 +294,13 @@ a {
                 & .rating-count{
                     color:rgba(0, 0, 0, 1);
                     opacity: 0.5;
+                    font-family: "Poppins", sans-serif;
+                    font-weight:600;
+
                 }
 
             }
-        }
+        
 /* add to card buttons */
 .add-to-cart-btn {
     position: absolute;
@@ -337,6 +350,7 @@ header {
                 background-color: transparent;
                 &:focus {
                     outline: none;
+                    border-bottom: 2px solid black;
                 }
 
             }
@@ -475,7 +489,10 @@ header {
     margin-bottom: 70px;
     & .content {
         color: var(--white);
+        & span{
+            color: #00FF66;
 
+        }
         & h2 {
             margin-block: 32px;
             font-size: 48px;
@@ -492,6 +509,10 @@ header {
             background-color: #00FF66;
             padding: 16px 48px;
             border-radius: 4px;
+            &:hover{
+                transform: translateY(-3px);
+
+            }
         }
     }
     & .image-wrapper {
@@ -504,5 +525,6 @@ header {
 
     & .products-wrapper {
         margin-block: 60px;
+        
     }
 }
